@@ -1,5 +1,9 @@
 # Springboot example
 
-1. simple REST API created with this tech:
+simple REST API created with this tech:
     - Springboot
     - JPA
+    
+## Code
+
+### `mvn spring-boot:run`

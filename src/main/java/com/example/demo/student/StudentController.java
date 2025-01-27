@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "api/student")
+@RequestMapping(path = "api/students")
 public class StudentController {
 
     private final StudentService studentService;

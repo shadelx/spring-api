@@ -47,12 +47,12 @@ public class StudentService {
 			.orElseThrow(() -> new IllegalStateException(
 				"student with id" + studentId + "does not exist"));
 
-		if (name != null && name.length() > 0 &&
+		if (name != null && !name.isEmpty() &&
 			!Objects.equals(student.getName(), name)){
 				student.setName(name);
 			}
 
-		if (email != null && email.length() > 0 &&
+		if (email != null && !email.isEmpty() &&
 			!Objects.equals(student.getEmail(), email)){
 				Optional<Student> studentOptional = studentRepository.findStudentByEmail(email);
 				if(studentOptional.isPresent()){
